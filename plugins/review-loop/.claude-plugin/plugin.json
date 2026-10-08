@@ -1,0 +1,8 @@
+{
+  "name": "review-loop",
+  "version": "0.1.0",
+  "description": "Review → PR comments → fix → re-review loop around /code-review, with round-to-round convergence and hand-off to the PR's owning session.",
+  "author": {
+    "name": "smallumb"
+  }
+}
