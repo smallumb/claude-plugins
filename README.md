@@ -8,8 +8,6 @@ Claude Code plugins, published as the `smallumb` marketplace.
 
 ## Install
 
-This repository is private, so your GitHub credentials must be able to read it.
-
 ```
 /plugin marketplace add smallumb/claude-plugins
 /plugin install review-loop@smallumb
@@ -28,7 +26,7 @@ To have a project offer it to everyone working in it, add to the project's `.cla
 
 ### Cloud sessions (claude.ai/code)
 
-Cloud sessions do **not** install plugins listed in a repository's `enabledPlugins`. Use a SessionStart hook that runs:
+Cloud sessions do **not** install plugins listed in a repository's `enabledPlugins`. Use a SessionStart hook that runs the commands below. This works only because this repository is public: a cloud session can reach just the repositories it was started with, so a private marketplace repo would be refused.
 
 ```bash
 claude plugin marketplace add smallumb/claude-plugins
